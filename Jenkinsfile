@@ -16,7 +16,7 @@ pipeline {
             }
         stage('Deploy') {
             steps {
-		sh 'docker push sarahsmalley/simple-project-server:latest'
+		sh 'docker push sarah1818/simple-project-server:latest'
             }
         }
     }
