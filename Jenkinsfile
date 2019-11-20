@@ -5,13 +5,15 @@ environment {
 }
     stages {
        stage ("version"){
+	steps{
 	echo "${VERSION}"
+	}
 	}
 	 stage('Testing') {
             steps {
                     sh 'mvn test -Dtest=ControllerAndServiceSuite'
 			sh 'mvn test -Dtest=IntegrationSuite'
-                }
+         }
             }
         stage('Build') {
             steps {
