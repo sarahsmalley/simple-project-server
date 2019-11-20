@@ -5,7 +5,7 @@ environment {
 }
     stages {
        stage ("version"){
-	echo "$(version)"
+	echo "${version}"
 	}
 	 stage('Testing') {
             steps {
