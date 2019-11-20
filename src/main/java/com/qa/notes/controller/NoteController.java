@@ -26,7 +26,7 @@ import com.qa.notes.service.NoteService;
 
 @RestController
 @CrossOrigin("*")
-public class NoteController {
+/*public class NoteController {
 	
 	@Autowired
 	private NoteService service;
